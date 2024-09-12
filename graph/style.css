@@ -1,0 +1,18 @@
+body{
+    background: linear-gradient(315deg,white,#d7d7d7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: black;
+}
+#myChart{
+    width:100%;
+    max-width:600px;
+
+}
+#heading{
+    position: absolute;
+    left: 300px;
+    bottom: 400px;
+}

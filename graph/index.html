@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<link rel="stylesheet" href="style.css"/>
+<body>
+
+<div id="heading">
+        <h1>Graph of AGE,INCOME and EXPENSES</h1>
+    
+</div>
+<canvas id="myChart"></canvas>
+
+<script>
+    const xValues = ['Year 5', 'Year 10', 'Year 15', 'Year 20', 'Year 30', 'Year 40'];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [
+    {
+     label: 'Age',
+     data: [25, 26, 27, 28, 29], // Example data
+     borderColor: 'purple',
+    fill: false,
+     },
+
+     { 
+
+     label: 'Income',
+     data: [0,0,100,300,1000,2510,3000,5000,7830,2478],
+      borderColor: "red",
+      fill: false
+    },
+     { 
+      label: 'Expenses',
+      data: [160,170,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+</script>
+</body>
+</html>
